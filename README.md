@@ -1,2 +1,2 @@
 # formValidation
-Simple form validation (in progress)
+Simple form validation using JS (in progress)
