@@ -6,23 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>form validation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="js\validation.js"></script>
-    <style>
-
-        .form_align {
-            text-align: center;
-        }
-
-        #confirm_message {
-            display: none;
-        }
-
-        
-
-    </style>
-
+    <link rel="stylesheet" href="css\main.css" type="text/css" />
 </head>
 <body>
     <div class="row">
@@ -30,7 +14,7 @@
         <div class="tabcontent col-lg-6 col-md-8 col-sm-10 col-xm-12">
             <form name="pay">
                     <div class="row" id="radio_buttons">
-                        <div id="cardtype_radios" class="form_align col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="cardtype_radios" class="form_align col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 10px">
                                 <input type="radio" id="mastercard_check" name="card_type" value="Mastercard">
                                 <img src="img\mastercard_logo.png" id="mastercard" width="150px" onclick="radio_button(this.id)">
                                 <input type="radio" id="visa_check" name="card_type" value="Visa">
@@ -38,7 +22,6 @@
                                 <input type="radio" id="paypal_check" name="card_type" value="Paypal">
                                 <img src="img\PayPal_logo.png" id="paypal" width="150px" onclick="radio_button(this.id)">
                         </div>
-                        <hr>
                         </div>
                     <div class="row">
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -64,25 +47,25 @@
                                 <div class="form-group">
                                         <label class="control-lable col-xs-2 col-sm-2 col-md-2 col-lg-2 lable_align" for="city">City:</label>
                                         <div class="col-xs-10 col-sm-10 ol-md-10 col-lg-10">
-                                                <input type="text" id="formcity" name="input" class="text_field form-control" placeholder="City" onchange="input_check(this.id)">
+                                            <input type="text" id="formcity" name="input" class="text_field form-control" placeholder="City" onchange="input_check(this.id)">
                                         </div>
                                     </div>
                                 <div class="form-group">
                                         <label class="control-lable col-xs-2 col-sm-2 col-md-2 col-lg-2 lable_align" for="country">Country:</label>
                                         <div class="col-xs-10 col-sm-10 ol-md-10 col-lg-10">
-                                                <input type="text" id="formcountry" name="input" class="text_field form-control" placeholder="Country" onchange="input_check(this.id)">
+                                            <input type="text" id="formcountry" name="input" class="text_field form-control" placeholder="Country" onchange="input_check(this.id)">
                                         </div>
                                     </div>
                                 <div class="form-group">
                                         <label class="control-lable col-xs-2 col-sm-2 col-md-2 col-lg-2 lable_align" for="postcode">Postcode:</label>
                                         <div class="col-xs-10 col-sm-10 ol-md-10 col-lg-10">
-                                                <input type="text" id="formpostcode" name="input" class="text_field form-control" placeholder="Postcode" onchange="input_check(this.id)">
+                                            <input type="text" id="formpostcode" name="input" class="text_field form-control" placeholder="Postcode" onchange="input_check(this.id)">
                                         </div>
                                     </div>
                                 <div class="form-group">
                                         <label class="control-lable col-xs-2 col-sm-2 col-md-2 col-lg-2 lable_align" for="email">Email:</label>
                                         <div class="col-xs-10 col-sm-10 ol-md-10 col-lg-10">
-                                                <input type="text" id="formemail" name="input" class="text_field form-control" placeholder="Email" onchange="input_check(this.id)">
+                                            <input type="text" id="formemail" name="input" class="text_field form-control" placeholder="Email" onchange="input_check(this.id)">
                                         </div>
                                     </div>
                                 <div class="form-group form_align col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -95,11 +78,16 @@
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
                         </div>
                         <div id="confirm_message">
-                            <p class="alert alert-success">Hi, <a id="user_name"></a><br>&nbsp;&nbsp;&nbsp;thanks for purchasing our product using  your <a id="cardT"></a> credit  card  no. xxxx xxxx xxxx <a id="card_num"></a>. We will email your receipt on <a id="email"></a> and send the product to <a id="address"></a>. </p>
+                            <p class="alert alert-success">Hi, <a id="user_name"></a><br><br>&nbsp;&nbsp;&nbsp;thanks for purchasing our product using  your <a id="cardT"></a> credit  card  no. xxxx xxxx xxxx <a id="card_num"></a>. We will email your receipt to <a id="email"></a> and send the product to <a id="address"></a>.<br><br>Thank you!</p>
                         </div>
                 </form>
         </div>
         <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0"></div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js\validation.js"></script>
+
 </body>
 </html>

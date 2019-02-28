@@ -1,0 +1,20 @@
+.tabcontent{
+    position: fixed;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, .3);
+    border-radius: 5px;
+    padding: 10px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.form_align {
+    text-align: center;
+}
+/* hide message */
+#confirm_message {
+    display: none;
+}
+/* Show red background when form is empty */
+.empty {
+    background-color:lightcoral;
+}

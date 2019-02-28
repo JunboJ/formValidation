@@ -54,7 +54,6 @@
         if(input.length == 0) {
             return true;
         }else{
-            alert("unfilled form.")
             return false;
         }
     }
