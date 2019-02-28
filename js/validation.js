@@ -31,13 +31,7 @@
 
     //check radio button when click on picture
     function radio_button (imgid) {
-        var img = document.getElementsByTagName("img");
-        for(var i = 0; i < e.length; i++) {
-            if(img[i].id == imgid){
-                img[i].previousSibling.previousSibling.checked = true;
-            }else{
-            }
-        }
+        document.getElementById(imgid).previousSibling.previousSibling.checked = true;
     }
 
     //to check card type radios and return card type
